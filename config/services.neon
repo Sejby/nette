@@ -1,0 +1,9 @@
+services:
+    - App\Router\RouterFactory::createRouter
+    - App\Models\PostFacade
+
+search:
+	-	in: %appDir%
+		classes:
+			- *Factory
+			- *Facade
